@@ -1,0 +1,103 @@
+Design a single-page landing page for a SaaS product called Studyo — a studio management app built specifically for dance clubs in Serbia (contemporary and jazz ballet, competitive clubs). The target user is a dance studio owner or club administrator, aged 28–50, who currently manages everything through Viber groups, Google Sheets, and cash payments. The page is in Serbian language.
+
+Visual style:
+Dark, editorial, confident. Background is near-black (#0D0C0B). Primary text is warm off-white (#F0EDE6). Accent color is a deep amber (#D4820A) used sparingly — only for CTAs, key numbers, and hover states. Secondary surfaces use a very dark warm gray (#1A1917). No gradients. No stock photos of dancers. No hero illustration. Typography is the hero — large, bold, expressive headlines in a modern grotesque typeface (use Inter or DM Sans, weight 700 for headlines, 400 for body). Generous whitespace. Thin 0.5px borders in rgba(255,255,255,0.1) for card separators. Border-radius 8px on cards and buttons. The overall feeling should be: this was made by someone who understands dance clubs, not a generic SaaS company.
+
+Page structure and copy — implement exactly as written:
+
+1. Navigation bar
+Left: logo "Studyo" in 18px medium weight, letter-spacing 0.05em.
+Right: one ghost button "Prijavi se na listu čekanja" (amber border, amber text, transparent background, 13px).
+Sticky, background blurs to rgba(13,12,11,0.85) on scroll.
+
+2. Hero section
+Full viewport height. Vertically centered content, left-aligned, max-width 680px, left margin 10% on desktop.
+Above headline, a small label in amber: Za plesne studije i klubove · Srbija
+Headline (very large, 72px desktop / 40px mobile, weight 700, line-height 1.1, color #F0EDE6):
+Manje tabela.
+Više plesa.
+Subheadline (20px, weight 400, color rgba(240,237,230,0.6), margin-top 24px, max-width 480px):
+Studyo je aplikacija za upravljanje plesnim studijima — rasporedi, plaćanja, evidencija prisutnosti i obaveštenja, sve na jednom mestu.
+CTA button (amber fill #D4820A, dark text #0D0C0B, 16px medium, padding 14px 32px, border-radius 8px, margin-top 40px):
+Prijavi se na listu čekanja
+Below button, in 12px rgba(240,237,230,0.4):
+Već koriste: Studio 5 i Project 567, Novi Sad
+Right side of hero (desktop only): a minimal phone mockup outline — just the device frame in rgba(255,255,255,0.06), no screen content, slightly rotated 8 degrees, large, decorative only.
+
+3. Pain section
+Background stays dark. Section padding 120px vertical.
+Section label (amber, 11px uppercase tracking-widest): Poznato?
+Headline (48px, weight 700, margin-top 12px):
+Vodiš studio kroz
+Viber grupe i Excel tabele.
+Below, 3 pain point cards in a horizontal row (desktop) / stacked (mobile). Each card: dark surface #1A1917, 0.5px border rgba(255,255,255,0.08), padding 28px, border-radius 8px.
+Card 1:
+Icon: a simple "×" in amber 24px
+Title (16px, weight 500): Ručno praćenje plaćanja
+Body (14px, rgba(240,237,230,0.55), line-height 1.7): Ko je platio članarinu, ko duguje, ko kasni — sve se prati u glavi ili u tabeli koja ne prima odgovore.
+Card 2:
+Icon: a simple "×" in amber 24px
+Title: Zakazivanje solo termina
+Body: Koordinacija privatnih časova ide kroz poruke. Termini se gube, polaznici zaboravljaju, instruktori se bune.
+Card 3:
+Icon: a simple "×" in amber 24px
+Title: Obaveštenja koja nikad ne stignu
+Body: Otkazani trening, promenjen termin, podsetnik za uplatu — sve ručno, svaki put iznova.
+
+4. Solution / features section
+Section padding 120px vertical.
+Section label (amber, 11px uppercase): Kako Studyo funkcioniše
+Headline (48px, weight 700, margin-top 12px):
+Sve što studio treba.
+Ništa što ne treba.
+4 feature rows, alternating layout (text left / right). Each row has a text block and a minimal UI sketch (dark card with a few placeholder elements suggesting the feature — no real screenshots). Feature rows:
+Feature 1 — text left:
+Tag: Grupe i raspored
+Title (28px, weight 600): Raspored koji svi vide
+Body (16px, rgba(240,237,230,0.6), line-height 1.7, max-width 400px): Admin kreira grupe i termine. Polaznici i roditelji vide tačno kad su treninzi, bez pitanja u Viberu. Otkazivanje jednim klikom briše termin iz svih kalendara.
+Feature 2 — text right:
+Tag: Plaćanja
+Title: Evidencija bez gubitaka
+Body: Admin potvrđuje uplate, roditelji vide stanje u realnom vremenu. Automatski podsetnci stižu samo onima koji nisu platili — 10., 15. i 25. u mesecu.
+Feature 3 — text left:
+Tag: Solo termini
+Title: Privatni časovi bez razmene poruka
+Body: Instruktor postavlja slobodne termine. Polaznik bira kad mu odgovara. Sve se beleži, podsetnik stiže automatski.
+Feature 4 — text right:
+Tag: Uloge i dozvole
+Title: Svako vidi samo ono što mu treba
+Body: Admin, instruktor, roditelj, polaznik — svaka uloga ima svoje prikaze i dozvole. Jedna osoba može biti i polaznik i instruktor istovremeno.
+
+5. Social proof / trust section
+Background: slightly lighter dark surface #1A1917. Section padding 100px vertical.
+Centered text:
+Label (amber, 11px uppercase): Već u upotrebi
+Headline (40px, weight 700, margin-top 12px, centered):
+Prave škole. Pravi podaci.
+Two quote cards side by side (desktop) / stacked (mobile). Each card: #0D0C0B background, 0.5px border, padding 36px, border-radius 8px.
+Card 1:
+Quote (18px, weight 400, italic, rgba(240,237,230,0.8), line-height 1.6):
+"Konačno ne moram da šaljem poruke jednu po jednu. Svi vide raspored, svi dobijaju podsetnike."
+Attribution (14px, rgba(240,237,230,0.4), margin-top 20px): Project 567 · Plesni studio, Novi Sad
+Card 2:
+Quote: "Vodimo takmičarski klub sa više grupa i instruktora. Studyo drži sve na jednom mestu."
+Attribution: Studio 5 · Takmičarski plesni klub, Novi Sad
+
+6. Waitlist / CTA section
+Full-width section, background #0D0C0B, padding 140px vertical, centered.
+Headline (56px, weight 700, centered, line-height 1.1):
+Spreman da prestaneš
+da vodiš studio u Viberu?
+Subheadline (18px, rgba(240,237,230,0.55), margin-top 20px, centered, max-width 440px):
+Prijavi se na listu čekanja. Javiću ti se lično pre nego što otvorimo pristup.
+Email input + button inline (desktop) / stacked (mobile):
+Input: placeholder tvoj@email.com, dark surface background, 0.5px amber border, 16px, padding 14px 20px, border-radius 8px, width 320px
+Button: amber fill, dark text, Prijavi se, same height as input, border-radius 8px, padding 14px 28px
+Below form, 12px rgba(240,237,230,0.35), centered:
+Bez spam poruka. Samo obaveštenje kada aplikacija bude dostupna.
+
+7. Footer
+Minimal. Dark background. Single row: "Studyo · 2025" left, "kontakt@studyo.rs" right. 13px rgba(240,237,230,0.35). Thin top border rgba(255,255,255,0.08).
+
+Responsive behavior: Full desktop layout at 1280px. At 768px and below, all rows stack, hero headline scales to 40px, feature rows become single column, pain cards stack vertically. Navigation collapses the CTA button to just an amber dot or hides it.
+Do not use: stock photography, hero illustrations, colorful gradients, light backgrounds, carousel/slider components, or any animation beyond subtle hover states on buttons and cards (amber glow on hover, 0.2s transition).

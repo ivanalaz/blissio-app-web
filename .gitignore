@@ -1,0 +1,5 @@
+.DS_Store
+*.log
+
+# Stray lockfile if someone runs npm in the repo root without package.json
+/package-lock.json

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --blissio-bg: #0d0c0b;
+  --blissio-surface: #1a1917;
+  --blissio-cream: #f0ede6;
+  --blissio-lilac: #c084fc;
+  --blissio-lilac-deep: #a855f7;
+}
+
+@theme inline {
+  --color-blissio-bg: var(--blissio-bg);
+  --color-blissio-surface: var(--blissio-surface);
+  --color-blissio-cream: var(--blissio-cream);
+  --color-blissio-lilac: var(--blissio-lilac);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--blissio-bg);
+  color: var(--blissio-cream);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid var(--blissio-lilac);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.75rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 1rem;
+}
