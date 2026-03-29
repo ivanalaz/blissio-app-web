@@ -18,8 +18,8 @@ export function Logo({ className = "" }: LogoProps) {
         width={2000}
         height={1000}
         priority
-        className="h-10 w-auto object-contain object-left md:h-20"
-        sizes="(max-width: 768px) 160px, 256px"
+        className="h-16 w-auto object-contain object-left md:h-20"
+        sizes="(max-width: 768px) 240px, 256px"
       />
     </Link>
   );

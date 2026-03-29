@@ -1,5 +1,8 @@
 .DS_Store
 *.log
 
+# Local Figma / design reference (not part of the deployed app)
+Blissio Design/
+
 # Stray lockfile if someone runs npm in the repo root without package.json
 /package-lock.json
