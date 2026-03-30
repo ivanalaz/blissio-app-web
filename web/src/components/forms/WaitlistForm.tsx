@@ -8,6 +8,7 @@ export function WaitlistForm() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
+  const [inputFocused, setInputFocused] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -62,13 +63,17 @@ export function WaitlistForm() {
           placeholder="tvoj@email.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          onFocus={() => setInputFocused(true)}
+          onBlur={() => setInputFocused(false)}
           required
           disabled={status === "loading"}
-          className="w-full rounded-lg px-5 py-3.5 text-[16px] outline-none transition-[box-shadow] focus:ring-2 focus:ring-[#C084FC]/60 md:w-[320px] disabled:opacity-60"
+          className="w-full rounded-lg px-5 py-3.5 text-[16px] outline-none md:w-[320px] disabled:opacity-60"
           style={{
             backgroundColor: "#1A1917",
             border: "0.5px solid #C084FC",
             color: "#F0EDE6",
+            transition: "box-shadow 0.2s ease",
+            boxShadow: inputFocused ? "0 0 0 2px #C084FC" : "none",
           }}
         />
         {/* Honeypot */}
@@ -83,7 +88,7 @@ export function WaitlistForm() {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="w-full rounded-lg px-7 py-3.5 text-[16px] font-medium transition-all duration-200 hover:bg-[#A855F7] hover:shadow-lg hover:shadow-[#C084FC]/20 md:w-auto disabled:opacity-60"
+          className="w-full cursor-pointer rounded-lg px-7 py-3.5 text-[16px] font-medium transition-all duration-200 hover:-translate-y-0.25 hover:bg-[#A855F7] hover:shadow-lg hover:shadow-[#C084FC]/30 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C084FC]/50 md:w-auto disabled:cursor-not-allowed disabled:opacity-60"
           style={{
             backgroundColor: "#C084FC",
             color: "#0D0C0B",

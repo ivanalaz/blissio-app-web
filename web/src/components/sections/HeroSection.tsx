@@ -36,7 +36,7 @@ export function HeroSection() {
           </p>
           <Link
             href="#lista-cekanja"
-            className="inline-block rounded-lg px-8 py-3.5 text-[16px] font-medium transition-all duration-200 hover:bg-[#A855F7] hover:shadow-lg hover:shadow-[#C084FC]/20"
+            className="inline-block cursor-pointer rounded-lg px-8 py-3.5 text-[16px] font-medium transition-all duration-200 hover:-translate-y-0.25 hover:bg-[#A855F7] hover:shadow-lg hover:shadow-[#C084FC]/30 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C084FC]/50"
             style={{
               backgroundColor: "#C084FC",
               color: "#0D0C0B",

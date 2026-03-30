@@ -30,6 +30,15 @@ body {
   outline-offset: 3px;
 }
 
+/* Inputs and buttons manage their own focus style — suppress the global outline */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: none;
+  outline-offset: 0;
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;
